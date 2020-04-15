@@ -1,0 +1,23 @@
+{
+  "name": "frontend-workflow-template",
+  "version": "1.0.0",
+  "description": "Frontend workflow template with vanilla js, Parcel bundler, Babel, and Sass",
+  "main": "app.js",
+  "scripts": {
+    "dev": "rm -rf ./development && rm -rf ./.cache && parcel public/index.html --out-dir development -p 3000",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./"
+  },
+  "author": "Rob Ranf",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "eslint": "^6.8.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
